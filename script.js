@@ -34,7 +34,7 @@ const lookup = {
 function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
-
+ console.log("sameer");
   return; //return decodedArr
 }
 
