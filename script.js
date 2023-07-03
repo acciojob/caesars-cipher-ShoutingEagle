@@ -34,8 +34,20 @@ const lookup = {
 function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
- console.log("sameer");
-  return; //return decodedArr
+ for(let i=0;i<encidedStr;i++){
+	 let  temp = encodedStr[0];
+	 decodedArr.push(lookTable(temp));
+	 
+ }
+  return decodedArr; //return decodedArr
+}
+
+function lookTable(parameter){
+	for (let x in lookup){
+		if(x === parameter){
+			return lookup[x];
+		}
+	}
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
